@@ -1,0 +1,257 @@
+/* Estilos generales */
+body {
+ /*Estilo del cuerpo de la pestaña */
+    margin: 0;
+    padding: 0;
+    background-image: url(Imagenes/portada.jpg);
+    background-size: cover;
+}
+header /* estilos header */
+{
+    background: linear-gradient(135deg, #FF6347, #FFA500, #c5c51e);    
+    width: 100%;
+    clear: both;
+    content: "";
+    display: table;
+    border-radius: 10px;
+    text-align: center; /* Centrar el texto del header */
+}
+.menu{ 
+    width: 900px;
+    margin: 0 auto;
+}
+
+img{ /* Estilo de imagen de menu */
+    width: 120px;
+    height: 70px;
+    float: left;
+    padding: 0px;
+    border-radius: 50%;
+}
+
+nav{
+    float: right;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 35px;
+    padding: 20px 0;
+    float: left;
+    position: relative;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(10, 8, 8); /* Cambiar el color del texto a blanco */
+    font-weight: bold;
+    font-size: 16.5px; /* Aumentar el tamaño de la letra */
+    text-align: center;
+    padding: 0 20px 0 20px;
+}
+
+
+nav ul li a::before{
+    display: block;
+    content: "";
+    width: 0%;
+    background: #444;
+    height: 5px;
+    top: 0;
+    position: absolute;
+    transition: width 0.2s;
+}
+
+nav ul li a:hover::before{
+    width: 100%;
+}
+
+
+nav ul li .comp-icon {
+    margin-left: 30px;
+    color: #968181;
+    font-size: 27px;
+    width: 40px; /* Tamaño del círculo */
+    height: 40px; /* Tamaño del círculo */
+    border-radius: 50%; /* Hace que el elemento sea un círculo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff; /* Color de fondo del círculo */
+    position: relative;
+}
+nav ul li .comp-icon .counter {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #ad2e0f;
+    color: #fff;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor{ /*Estilo caja */
+    width: 50%;
+    max-width: 100%;
+    background: #fdc6305e;  
+    background: -webkit-linear-gradient(to right, #b16037ab, #c0a14b);  
+    background: linear-gradient(to right, #e6794294, #e2b947); 
+    padding: 40px;
+    margin: 20px auto;
+    box-shadow: 0px 10px 16px rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    margin-bottom: 50px;
+    
+}
+
+.contenedor h2{ /*Estilo de letra h2 */
+    font-size: 30px;
+    font-weight: 600;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 25px;
+    color: rgb(19, 17, 0);
+    text-transform: uppercase;
+    background: #FDC830;  
+    background: -webkit-linear-gradient(to right, #F37335, #FDC830);  
+    background: linear-gradient(to right, #F37335, #FDC830); 
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .5);
+}
+
+.contenido .info,
+.contenido .formulario{
+    width: 90%;
+    padding-left: 25px;
+}
+
+.formulario{ /*Estilo formulario */
+padding: 10px;}
+
+.formulario input[type="text"],
+.formulario textarea{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px 20px;
+    border: 1px solid #ac9595;
+    font-weight: 400;
+    outline: 0;
+    border-radius: 10px;
+    box-shadow: 0px 5px 8px rgb(8, 8, 8);
+}
+
+.formulario textarea{
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 200px;
+    min-height: 150px;
+}
+
+.formulario input[type="text"]:focus
+.formulario textarea{
+    border: 1px solid #359978;
+}
+.pedido {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #FDC830; 
+    background: -webkit-linear-gradient(to right, #F37335, #FDC830); 
+    background: linear-gradient(to right, #F37335, #FDC830); 
+    box-shadow: 0px 5px 8px rgb(8, 8, 8);
+}
+
+.pedido label{
+    margin-bottom: 20px;
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+    background: -webkit-linear-gradient(to right, #F37335, #FDC830); 
+    background: linear-gradient(to right, #F37335, #FDC830); 
+    box-shadow: 0px 2px 3px rgb(8, 8, 8);
+    font-size: 25px;
+}
+
+
+.pedido label {
+    font-weight: bold;
+}
+
+.pedido input[type="radio"] {
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.pedido select {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid #ad5656;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.pedido div {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #080707;
+}
+
+.pedido p {
+    margin: 5px 0;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#make-purchase {
+    margin-top: 60px;
+    margin-left: 30px;
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 4px 4px 8px rgb(8, 8, 8);
+    text-decoration: none;
+
+}
+
+#make-purchase:hover {
+    background-color: #e65a37;
+    font-size: 20px;
+    box-shadow: 3px 5px 8px rgb(8, 8, 8);
+}
+
+/*Pie de pagina */
+footer {
+    bottom: 0;
+    display: flex;
+    background: #d1a205;
+    padding: 10px 0;
+    width: 100%;
+    overflow: hidden;
+    height: 100px;
+}
+.sec1{ /*Estilo de pie de pagina */
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+
+}
+
+.part1{ /*Sentido de ubicacion de pie de pagina */
+    text-align: center;
+}
+
+.part2{ /*Diseño de letra de pie de pagina */
+    color: #080606;
+    padding-bottom: 2px;
+    margin-bottom: 1px;
+}

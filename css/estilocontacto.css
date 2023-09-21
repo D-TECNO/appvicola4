@@ -1,0 +1,197 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{ /* Estilos de los ahref */
+    text-decoration: none;
+}
+
+body{ /*Estilo del cuerpo de la pestaña */
+    background-image: url(Imagenes/portada.jpg);
+    background-size: cover;
+}
+header /* estils header */ {
+    background: linear-gradient(135deg, #FF6347, #FFA500, #c5c51e);    
+    width: 100%;
+    clear: both;
+    content: "";
+    display: table;
+    border-radius: 10px;
+    text-align: center; /* Centrar el texto del header */
+}
+.menu{ 
+    width: 900px;
+    margin: 0 auto;
+}
+
+img{ /* Estilo de imagen de menu */
+    width: 120px;
+    height: 70px;
+    float: left;
+    padding: 0px;
+    border-radius: 50%;
+}
+
+nav{
+    float: right;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 35px;
+    padding: 30px 0;
+    float: left;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(10, 8, 8); /* Cambiar el color del texto a blanco */
+    font-weight: bold;
+    font-size: 18px; /* Aumentar el tamaño de la letra */
+    text-align: center;
+    padding: 0 20px 0 20px;
+}
+
+
+nav ul li a::before{
+    display: block;
+    content: "";
+    width: 0%;
+    background: #444;
+    height: 5px;
+    top: 0;
+    position: absolute;
+    transition: width 0.2s;
+}
+
+nav ul li a:hover::before{
+    width: 100%;
+}
+
+
+.contenedor{ /*Estilo caja */
+    width: 90%;
+    max-width: 100%;
+    background: #af6e238a;
+    padding: 40px;
+    margin: 20px auto;
+    box-shadow: 0px 10px 16px rgba(0, 0, 0, .5);
+    border-radius: 10px;
+}
+
+.contenedor h1{ /*Estilo de letra h1 */
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 25px;
+    color: rgb(19, 17, 0);
+    text-transform: uppercase;
+    box-shadow: 1px 2px 1px rgba(0, 0, 0, .5);
+}
+
+.contenido{ /* Estilo contenido de caja */
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.contenido .info,
+.contenido .formulario{
+    width: 50%;
+}
+
+.info{/*Estilo info */
+    padding-left: 10px;
+}
+
+.info .col{
+    width: 100%;
+    display: flex;
+    margin-bottom: 50px;
+    font-size: 16px;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.info .col .icono{
+    color: rgb(2, 2, 2);
+    margin-right: 10px;
+}
+.info .col p{
+    color: rgb(27, 8, 2);
+}
+
+.info .redes-s{ /* Estilo redes sociales */
+    width: 100%;
+    overflow: hidden;
+    padding-left:5px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.info .redes-s a { /*Diseño botones de redes */
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background: #c94204;
+    color: #fff;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, .4);
+}
+
+.info .redes-s a:hover{
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, .4) ;
+    background: linear-gradient(135deg, #FF6347, #FFA500, #c5c51e);    
+}
+
+.formulario{ /*Estilo formulario */
+    padding-left: 10px;
+}
+
+.formulario input[type="text"],
+.formulario textarea{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px 20px;
+    border: 1px solid #ac9595;
+    font-weight: 400;
+    outline: 0;
+    border-radius: 10px;
+    box-shadow: 0px 5px 8px rgb(8, 8, 8);
+}
+
+.formulario textarea{
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 200px;
+    min-height: 150px;
+}
+
+.formulario input[type="text"]:focus
+.formulario textarea{
+    border: 1px solid #030303;
+}
+
+.formulario button{
+    padding: 14px 30px;
+    border: transparent;
+    background: #FDFC47;  
+    background: -webkit-linear-gradient(to right, #24FE41, #FDFC47);  
+    background: linear-gradient(to right, #24FE41, #FDFC47); 
+    cursor: pointer;
+    float: right;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.formulario button:hover{
+    background: linear-gradient(135deg, #FF6347, #FFA500, #c5c51e);    
+}

@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding-left: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(Imagenes/portada.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Asegura que el contenido ocupe al menos el alto de la ventana */
+
+}/*Modificamos el menu */
+header {
+    background: linear-gradient(135deg, #FF6347, #FFA500, #c5c51e);    
+    width: 100%;
+    clear: both;
+    content: "";
+    display: table;
+    border-radius: 10px;
+    text-align: center; /* Centrar el texto del header */
+}
+.menu{ 
+    width: 900px;
+    margin: 0 auto;
+}
+
+img{ /* Estilo de imagen de menu */
+    width: 120px;
+    height: 70px;
+    float: left;
+    padding: 0px;
+    border-radius: 50%;
+}
+
+nav{
+    float: right;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 20px;
+    padding: 30px 0;
+    float: left;
+    position: relative;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(10, 8, 8); /* Cambiar el color del texto a blanco */
+    font-weight: bold;
+    font-size: 16px; /* Aumentar el tamaño de la letra */
+    text-align: center;
+    padding: 0 20px 0 20px;
+}
+
+
+nav ul li a::before{
+    display: block;
+    content: "";
+    width: 0%;
+    background: #444;
+    height: 5px;
+    top: 0;
+    position: absolute;
+    transition: width 0.2s;
+}
+
+nav ul li a:hover::before{
+    width: 100%;
+}
+/* Estilo para el slider de imágenes */
+.slider-container {
+    padding: 20px;
+    width: 35%;
+    position: relative;
+    left: 900px;
+    height: 200px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+  
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+  
+.swiper-slide img {
+    border: solid 2px #080606;
+    width: 88%;
+    height: 98%;
+    object-fit: cover;
+    border-radius: 20PX;
+    box-shadow: 5px 5px 5px #000;
+
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    background: #d1a205;
+    padding: 10px 0;
+    width: 100%;
+    overflow: hidden;
+}
+.sec1{ /*Estilo de pie de pagina */
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+
+}
+
+.part1{ /*Sentido de ubicacion de pie de pagina */
+    text-align: center;
+}
+
+.part2{ /*Diseño de letra de pie de pagina */
+    color: #080606;
+    padding-bottom: 5px;
+    margin-bottom: 1px;
+}
+/* Estilos para el botón de WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 120px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #25d366;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .whatsapp-button a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  /* Cambiar color al pasar el mouse */
+  .whatsapp-button:hover {
+    background-color: #128c7e;
+  }
+  
+.comp-button{
+    position: fixed;
+    bottom: 200px;
+    right: 20px;
+    z-index: 1000;
+    background: linear-gradient(135deg, #FF6347, #FFA500, #c5c51e);    
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.comp-button:hover{
+    background: linear-gradient(135deg, #da2404, #fffb00, #24d301);    
+}
+
+.comp-button a{
+    text-decoration: none;
+    color: #0e0c0d;
+    font-size: 24px;
+}

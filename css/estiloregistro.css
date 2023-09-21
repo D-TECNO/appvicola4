@@ -1,0 +1,249 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-image: url(Imagenes/portada.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+header {
+    background: linear-gradient(135deg, #FF6347, #FFA500, #c5c51e);    
+    width: 100%;
+    clear: both;
+    content: "";
+    display: table;
+    border-radius: 10px;
+    text-align: center; /* Centrar el texto del header */
+}
+
+.menu {
+    width: 900px;
+    margin: 0 auto;
+}
+
+img {
+    width: 120px;
+    height: 70px;
+    float: left;
+    padding: 0px;
+    border-radius: 50%;
+}
+
+nav {
+    float: right;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 35px;
+    padding: 30px 0;
+    float: left;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(10, 8, 8); /* Cambiar el color del texto a blanco */
+    font-weight: bold;
+    font-size: 18px; /* Aumentar el tamaño de la letra */
+    text-align: center;
+    padding: 0 20px 0 20px;
+}
+
+nav ul li a::before {
+    display: block;
+    content: "";
+    width: 0%;
+    background: rgb(7, 6, 6); /* Cambiar el color del subrayado a blanco */
+    height: 5px;
+    top: 0;
+    position: absolute;
+    transition: width 0.2s;
+}
+
+nav ul li a:hover::before {
+    width: 100%;
+}
+
+.form-register {
+    width: 350px;
+    background: #24303c69;
+    padding: 25px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 2px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #0e0101;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px; /* Aumentar el tamaño de la letra */
+}
+
+.form-register h4 {
+    font-size: 26px; /* Aumentar el tamaño de la letra */
+    margin-bottom: 20px;
+}
+
+.controls {
+    width: 100%;
+    background: #fff; 
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 3px solid #e08002;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: rgb(7, 6, 6);
+} 
+
+.controls::placeholder {
+    color: #e63904; /* Color amarillo suave para el placeholder */
+    text-align: center;
+}
+
+.form-register input[type="text"]::placeholder,
+.form-register input[type="email"]::placeholder,
+.form-register input[type="password"]::placeholder,
+.form-register input[type="number"]::placeholder {
+    color: #070606; /* Color rojo suave para los placeholders de inputs */
+}
+.form-register button {
+    color: white;
+    text-decoration: none;
+    background: linear-gradient(135deg, #FF6347, #FFA500, #c5c51e);    
+}
+
+.form-register a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.form-register a:hover {
+    color: rgba(240, 92, 7, 0.767);
+    text-decoration: none;
+}
+
+.titulo {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+.form-register button:hover {
+    color: #da680b;
+    color: #000;
+    border-radius: 20px;
+    box-shadow: 0 0 5px #da680b,
+                0 0 25px #da680b,
+                0 0 50px #da680b,
+                0 0 100px #da680b;
+}
+
+.form-register form button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #070606;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 20px;
+    letter-spacing: 4px;
+    border: solid #fff;
+    border-radius: 10px;
+}
+
+.form-register button span:nth-child(1){
+    top:0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,
+        transparent, #da680b);
+    animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1{
+    0%{
+        left: -100%;
+    }
+    50%,
+    100%{
+        left: 100%;
+    }
+}
+
+.form-register-box  button span:nth-child(2){
+    top:-100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, 
+        transparent, #da680b);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s;
+}
+@keyframes btn-anim2{
+    0%{
+        top: -100%;
+    }
+    50%,
+    100%{
+        top: 100%;
+    }
+}
+
+.form-register-box button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, 
+        transparent, #da680b);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s;
+}
+
+@keyframes btn-anim3{
+    0%{
+        right: -100%;
+    }
+    50%,
+    100%{
+        right: 100%;
+    }
+}
+
+.form-register-box button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #da680b);
+    animation: btn-anim4 1s linear infinite;
+    animation: .75s;
+}
+@keyframes btn-anim4{
+    0%{
+        bottom: -100%;
+    }
+    50%,
+    100%{
+        bottom: 100%;
+    }
+}
