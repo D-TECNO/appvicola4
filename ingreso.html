@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesión</title>
+    <link rel="stylesheet" href="css/estiloingreso.css">
+    <link rel="shortcut icon" href="css/Imagenes/icono.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/fbf50badbe.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="menu">
+           <a href="index.html"> <img src="css/Imagenes/icono.png" alt=""></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                    <li><a href="quienessomos.html">Quienes Somos</a></li>
+                    <li><a href="Ubicacion.html">Ubicacion</a></li>
+                    <li><a href="registro.html">Ubicacion</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="form-register">
+        <h4>Iniciar Sesion</h4>
+        <form action="ingresoU.php" method="POST" id="login-form">
+            <div class="box">
+                <span class="border-top"></span>
+                <span class="border-right"></span>
+                <span class="border-bottom"></span>
+                <span class="border-left"></span>
+
+                    <input class="controls" type="email" name="correo" placeholder="Ingrese su Correo" required>
+                <div class="password-wrapper">
+                    <input class="controls" type="password" name="contraseña" placeholder="Ingrese su Contraseña" required>
+                    <i class="fas fa-eye" id="vPassword"></i> <!-- Icono de "ojo" para mostrar/ocultar la contraseña -->
+                </div>
+            </div>
+            <button type="submit" class="login-button">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Ingresar
+            </button>
+            <br>
+            <b>
+                <a href="registro.html">Crear Cuenta</a>
+                <br>
+                <a href="error500.html">Recuperar Contraseña</a>
+            </b>
+        </form>
+    </section>
+
+    <script>
+        const passwordInput = document.querySelector('input[name="contraseña"]');
+        const vPasswordIcon = document.getElementById('vPassword');
+// este IF lo que nos va a ayudar es a decir si el input de psw esta diligenciado lo muestre o no 
+        vPasswordIcon.addEventListener('click', function() {
+            if (passwordInput.type === 'password') { 
+                passwordInput.type = 'text';
+                vPasswordIcon.classList.remove('fa-eye');
+                vPasswordIcon.classList.add('fa-eye-slash');
+            } else {
+                passwordInput.type = 'password';
+                vPasswordIcon.classList.remove('fa-eye-slash');
+                vPasswordIcon.classList.add('fa-eye');
+            }
+        });
+    </script>
+</body>
+</html>
